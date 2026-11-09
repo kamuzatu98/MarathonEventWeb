@@ -1,0 +1,30 @@
+﻿@model MarathonEventWeb.Models.Event
+
+@{
+    ViewData["Title"] = "Event Details";
+}
+
+<div class="container mt-4">
+    <h2>Event Details</h2>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-3">Event Name</dt>
+        <dd class="col-sm-9">@Html.DisplayFor(model => model.EventName)</dd>
+
+        <dt class="col-sm-3">Description</dt>
+        <dd class="col-sm-9">@Html.DisplayFor(model => model.EventDescription)</dd>
+
+        <dt class="col-sm-3">Location</dt>
+        <dd class="col-sm-9">@Html.DisplayFor(model => model.EventLocation)</dd>
+
+        <dt class="col-sm-3">Distance</dt>
+        <dd class="col-sm-9">@Html.DisplayFor(model => model.Distance)</dd>
+
+        <dt class="col-sm-3">Event Type</dt>
+        <dd class="col-sm-9">@Html.DisplayFor(model => model.EventType)</dd>
+    </dl>
+    <div class="mt-4">
+        <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-warning">Edit</a>
+        <a asp-action="Index" class="btn btn-secondary ms-2">Back to List</a>
+    </div>
+</div>
