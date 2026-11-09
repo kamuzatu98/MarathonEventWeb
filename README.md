@@ -37,3 +37,24 @@
    ```bash
    git clone [https://github.com/YOUR_USERNAME/MarathonEventWeb.git](https://github.com/YOUR_USERNAME/MarathonEventWeb.git)
    cd MarathonEventWeb
+
+
+   MarathonEventWeb/
+├── Controllers/
+│   ├── AccountsController.cs
+│   └── EventsController.cs
+├── Models/
+│   ├── Account.cs
+│   └── Event.cs
+├── Views/
+│   ├── Accounts/
+│   │   ├── Create.cshtml
+│   │   ├── Delete.cshtml
+│   │   ├── Details.cshtml
+│   │   ├── Edit.cshtml
+│   │   └── Index.cshtml
+│   ├── Events/
+│   └── Shared/
+│       └── _Layout.cshtml
+├── appsettings.json
+└── Program.cs
